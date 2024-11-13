@@ -1,0 +1,43 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        // {
+        //     "label": "Build",
+        //     "type": "shell",
+        //     "command": "build.bat",
+        //     "args": [
+        //         "\"${workspaceFolder}\"",
+        //         "\"E:/SteamLibrary/steamapps/common/Arma 3/Custom Mods/@bax_supplementals/addons\"",
+        //         "\"C:/Users/BAXEN-Desktop/Documents/Coding/Arma 3 Scripts/addons/_biprivatekeys/BAXENATOR__041.biprivatekey\""
+        //     ],
+        //     "problemMatcher": []
+        // }
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/.vscode/build.py",
+                "\"${workspaceFolder}\"",
+                "\"E:/SteamLibrary/steamapps/common/Arma 3/Custom Mods/@bax_supplementals/addons\"",
+                "\"C:/Users/BAXEN-Desktop/Documents/Coding/Arma 3 Scripts/addons/_biprivatekeys/BAXENATOR__041.biprivatekey\""
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Build (quick)",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/.vscode/build.py",
+                "\"${workspaceFolder}\"",
+                "\"E:/SteamLibrary/steamapps/common/Arma 3/Custom Mods/@bax_supplementals/addons\"",
+                "\"C:/Users/BAXEN-Desktop/Documents/Coding/Arma 3 Scripts/addons/_biprivatekeys/BAXENATOR__041.biprivatekey\"",
+                "-quickBuild"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
