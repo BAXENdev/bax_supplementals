@@ -8,6 +8,8 @@ _activated = _this param [2, true, [true]];
 // diag_log _this;
 
 if (_activated) then {
+	if (isNull (missionConfigFile >> "CfgBax")) exitWith {};
+
     private ["_registerBlufor", "_registerOpfor", "_registerIndfor", "_registerCivilian"];
     _registerBlufor = _logic getVariable ["RegisterBlufor", true];
     _registerOpfor = _logic getVariable ["RegisterOpfor", true];
