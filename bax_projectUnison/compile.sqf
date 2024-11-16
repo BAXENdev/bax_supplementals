@@ -2,6 +2,7 @@ _classes = getArray (configFile >> "CfgPatches" >> "E11_Vests" >> "weapons");
 _classStrings = _classes apply {
     format [
         "\tclass %1: ItemCore {" + endl +
+        "\t\tpicture = ""\mtf_e11_vests\mtf_e11.paa"";" + endl +
         "\t\tclass ItemInfo: VestItem {" + endl +
         "\t\t\tmass = 65;" + endl +
         "\t\t\tcontainerClass = ""Supply130"";" + endl +
@@ -36,6 +37,7 @@ _classStrings = _classes apply {
     format [
         "\tclass %1: ItemCore {" + endl +
         "\t\tace_hearing_protection = 0.75;" + endl +
+        "\t\tpicture = ""\mtf_e11_helmets\mtf_e11.paa"";" + endl +
         "\t\tclass ItemInfo: HeadgearItem {" + endl +
         "\t\t\tclass HitpointsProtectionInfo {" + endl +
         "\t\t\t\tclass Head {" + endl +

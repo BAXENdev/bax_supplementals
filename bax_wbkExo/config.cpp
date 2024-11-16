@@ -26,5 +26,10 @@ class ACE_Medical_Injuries {
                 ace_medical_damage = "bax_wbkExo_fnc_disableExoFallDamage";
             };
         };
+        class collision {
+            class woundHandlers {
+                ace_medical_damage = "bax_wbkExo_fnc_disableExoFallDamage";
+            };
+        };
     };
 };
